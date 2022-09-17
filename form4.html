@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>job application</title>
+</head>
+<body>
+    <h1>job application</h1>
+
+    <form method="post" action="apply.php">
+        <fieldset id="jobinfo">
+            <legend>job information</legend>
+            <ol>
+                <li>
+                    <label for="jobofinterest">job of interest:</label>
+                    <select name="jobofinterest" id="jobofinterest" title="job of interest">
+                        <option>please select....</option>
+                        <option>Marketing Director</option>
+                        <option>receptionist</option>
+                        <option>sales manager</option>
+                        <option>Accont exicutive</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="Referralsource">Referral Source:</label>
+                    <select name="referralsource" id="referralsource" title="Referral source ">
+                        <option>please select...</option>
+                        <option>Advertisment</option>
+                        <option>Employee</option>
+                        <option>Empoyment Egency</option>
+                        <option>website</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="availability">Availability</label>
+                    <select name="availability" id="availability" title="availability">
+                        <option>please select...</option>
+                        <option>Full-time</option>
+                        <option>Part-time</option>
+                        <option>seasonal</option>
+                        <option>Temporary</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="Location">Location:</label>
+                    <select name="location" id="location" title="location">
+                        <option>please select...</option>
+                        <option>California</option>
+                        <option>Kansas</option>
+                        <option>New York</option>
+                        <option>Texas</option>
+                        <option>pennsylvania</option>
+                    </select>
+                </li>
+            </ol>
+        </fieldset>
+        <fieldset id="personalinfo">
+            <legend>Persional Information</legend>
+            <ol>
+                <li>
+                    <label for="First Name">First Name:</label>
+                    <input type="text" size="20" name="first name" id="first name" title="first name">
+                </li>
+                <li>
+                    <label for="Last name">Last Name:</label>
+                    <input type="text" size="20" name="second name" id="second name" title="second name">
+                </li>
+                <li>
+                    <label for="address"> Street Address:</label>
+                </li>
+                <li>
+                    <label for="city">city:</label>
+                    <input type="text" size="20" name="city" id="city" title="city">
+                </li>
+                <li>
+                    <label for="state">state:</label>
+                    <input type="text" name="state" id="state" title="state">
+                </li>
+                <li>
+                    <label for="postalcode">Postal code</label>
+                    <input type="text" size="20" name="postalcode" id="postalcode" title="postalcode">
+                </li>
+                <li>
+                    <label for="Telephone">Telephone:</label>
+                    <input type="tel" size="20" name="Telephone" id="Telephone" title="Telephone">
+                </li>
+                <li>
+                    <label for="Email">Email:</label>
+                    <input type="email" name="email" id="email" title="email">
+                </li>
+                <li>
+                    <label for="citizenship">citizenship:</label>
+                    <input type="text" name="citizenship" id="citizenship" title="citizenship">
+                </li>
+                <li>
+                    <span class="lebel">Have you ever been convicted of a felony?</span>
+                    <label><input type="radio" name="Felony" id="Felonyyes" title="Felonyyes">Yes</label>
+                    <label><input type="radio" name="Felony" id="FelonyNo" title="FelonyNo">No</label>
+                </li>
+                <li>
+                    <span class="lebel">Are you willing to relocate?</span>
+                    <label><input type="radio" name="relocate" id="r1" title="r1">Yes</label>
+                    <label><input type="radio" name="relocate" id="r2" title="r2">No</label>
+                </li>
+            </ol>
+        </fieldset>
+        <fieldset id="employmenthistory">
+            <legend>Employment History</legend>
+            <h4>provide your employment history starting with the compony for which you have most recently worked.</h4>
+            <fieldset>
+                <legend>Compony 1</legend>
+                <ol>
+                    <li>
+                        <label for="componyname1">compony name:</label>
+                        <input type="text" size="20" name="componyname1" id="componyname1" title="componyname1">
+                    </li>
+                    <li>
+                        <label for="j2">job title:</label>
+                        <input type="text" size="20" name="j2" id="j2" title="j2">
+                    </li>
+                    <li>
+                        <label for="d2">start date:</label>
+                        <input type="text" size="20" name="d2" id="d2" title="d2">
+                    </li>
+                    <li>
+                        <label for="enddate">End date:</label>
+                        <input type="text" size="20" name="e2" id="e2" title="e2">
+                    </li>
+                    <li>
+                        <label for="r1">Responsibility:</label>
+                        <textarea name="r1" id="r1" title="r1" cols="50" rows="3"></textarea>
+                    </li>
+                    <li>
+                        <label for="r2">Reason for leaving:</label>
+                        <textarea name="r2" id="r2" title="r2" cols="50" rows="3"></textarea>
+                    </li>
+                </ol>
+            </fieldset>
+            <fieldset>
+                <legend>compony 2</legend>
+                <ol>
+                    <li>
+                        <label for="c2">compony Name:</label>
+                        <input type="text" size="20" name="c2" id="c2" title="c2"> 
+                    </li>
+                    <li>
+                        <label for="jobtitle2">job title:</label>
+                        <input type="text" size="20" name="jobtitle2" id="jobtitle2" title="jobtitle2"> 
+                    </li>
+                    <li>
+                        <label for="s2">start date::</label>
+                        <input type="text" size="20" name="s2" id="s2" title="s2"> 
+                    </li>
+                    <li>
+                        <label for="e3">End date::</label>
+                        <input type="text" size="20" name="e3" id="e3" title="e3"> 
+                    </li>
+                    <li>
+                        <label for="r2">Responsibility:</label>
+                        <textarea name="r2" id="r2" title="r2" cols="50" rows="3"></textarea>
+                    </li>
+                    <li>
+                        <label for="r3">Reason for leaving:</label>
+                        <textarea name="r3" id="r3" title="r3" cols="50" rows="3"></textarea>
+                    </li>
+                </ol>
+            </fieldset>
+            <fieldset>
+                <legend>compony 3</legend>
+                <ol>
+                    <li>
+                        <label for="componyname3">compony Name:</label>
+                        <input type="text" size="20" name="c3" id="c3" title="c3"> 
+                    </li>
+                    <li>
+                        <label for="jobtitle">job title:</label>
+                        <input type="text" size="20" name="jobtitle3" id="jobtitle3" title="jobtitle3"> 
+                    </li>
+                    <li>
+                        <label for="s2">start date::</label>
+                        <input type="text" size="20" name="s3" id="s3" title="s3"> 
+                    </li>
+                    <li>
+                        <label for="e4">End date::</label>
+                        <input type="text" size="20" name="e4" id="e4" title="e4"> 
+                    </li>
+                    <li>
+                        <label for="r4">Responsibility:</label>
+                        <textarea name="r4" id="r4" title="r4" cols="50" rows="3"></textarea>
+                    </li>
+                    <li>
+                        <label for="r5">Reason for leaving:</label>
+                        <textarea name="r5" id="r5" title="r5" cols="50" rows="3"></textarea>
+                    </li>
+                </ol>
+            </fieldset>
+        </fieldset>
+        <fieldset id="buttons">
+            <input type="reset" id="reset" name="reset" value="start over">
+            <input type="submit" id="submit" name="submit" value="submit">
+        </fieldset>
+        
+        
+    </form>
+    
+</body>
+</html>

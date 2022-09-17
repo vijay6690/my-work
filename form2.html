@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <form  style="background-color:darkgray; border-style: dotted;"> -->
+        <form>
+        <table align="CENTER" cellpadding="5" border="1">
+            <caption> KM custom HTML FORM EXAMPLE USING APPLESCRIPT </caption>
+            
+            <tr>
+                <td><label for="name">Name:</label></td>
+                <td><input type="text" id="name"></td>
+
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="text" id="email" size="50"></td>
+            </tr>
+            <tr>
+                <td><label for="password">password:</label></td>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <td>Approval reQuired<br> click on the button or text to<br>select</td>
+                <td><input type="checkbox"><label for="">Do you approve?</label></td>
+            </tr>
+            <tr>
+                <td><label for="Pick your favorite">Pick your Favorie<br>click on the button or text to<br>select</label></td>
+                <td><input type="radio" name="1"  id="a"><label for="a" >choice A</label><br>
+                    <input type="radio" name="1" id="b"><label for="b">choice B</label>  <br>
+                    <input type="radio" name="1" id="c"><label for="c">choice C</label></td>  
+            </tr>          
+            <tr>
+                <td><label for="popup manu">popup manu</label></td>
+                <td><select name="" id="">
+                    <option value="select city"> select city</option>
+                    <option value="select city">ahmedabad</option>
+                    <option value="select city">surat</option>
+                    <option value="select city">mehsana</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>list:<br>set up options:<br><ul>
+                    <small><li>Number of rows to display</li>
+                    <li>Allow multi-select</li></small>
+                </ul></td>
+                <td><select multiple>
+                    <option value="california ca">california ca</option>
+                    <option value="colorado co">colorado co</option>
+                    <option value="connecticut cn">connecticut cn</option>
+                    <option value="dalifornoa da">dalifornoa da</option>
+                    <option value="dolorado do">dolorado do</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>Field ignored by KM</td>
+                <td><input type="number"></td>
+            </tr>
+            <tr>
+                <td>Text Area</td>
+                <td><textarea cols="50" rows="5"></textarea></td>
+            </tr>
+            <tr>
+            <td align="center" colspan="2"><input type="submit" value="save">
+            <input type="reset" value="cancel">
+            <input type="button" value="reset"></td>
+            </tr>
+
+        </table>
+    </form>
+    
+</body>
+</html>

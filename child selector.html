@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>child-selector</title>
+    <style>
+        span{
+            /* background-color: aqua; */
+        }
+        div>span{
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div class="first">
+        <span>span #1 inside the div //
+            <span>span #0 inside span</span>
+            <span>span #0 inside span</span>
+            <span>span #0 inside span</span>
+            
+        </span>
+    </div>
+    <span> n  span not inside the div</span>
+    <span> n  span not inside the div</span>
+    <span> n  span not inside the div</span>
+
+    <div class="main">
+        <span>second div span</span>
+        <span>second div span</span>
+        <span>second div span</span>
+    </div>
+    
+</body>
+</html>

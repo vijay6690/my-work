@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      for (let i = 1; i <= 10; i++) {
+        for (let j = 1; j <= i; j++) {
+          document.write("*");
+        }
+        document.write("<br>");
+      }
+      ///////////
+
+      for (let i = 1; i <= 10; i++) {
+        for (let j = 1; j <= 10 + 1 - i; j++) {
+          // n + 1 - i
+          document.write("*");
+        }
+        document.write("<br>");
+      }
+      //////////////
+
+      let n = 10;
+      for (let raw = 1; raw <= 2 * n; raw++) {
+        // raw = 2 * n
+        // because we want to print duble of n row.
+        let totalColInRow = raw > n ? 2 * n - raw : raw;
+        for (let col = 1; col < totalColInRow; col++) {
+          document.write(" * ");
+        }
+        document.write("<br>");
+      }
+      //////////
+
+      let m = 10;
+      for (let row = 1; row < 2 * m; row++) {
+        let totalCol_In_row = row > m ? 2 * m - row : row;
+        for (let col = 1; col < totalCol_In_row; col++) {
+          document.write(col);
+        }
+        document.write("<br>");
+      }
+      //////////////
+
+      let n2 = 10;
+      for (let row = 0; row < 2 * n2; row++) {
+        let totalCol_In_row = row > n2 ? 2 * n2 - row : row;
+        let noOfSpaces = n2 - totalCol_In_row;
+        for (let s = 0; s < noOfSpaces; s++) {
+          document.write("_");
+        }
+        for (let col = 0; col < totalCol_In_row; col++) {
+          document.write(" * ");
+        }
+        document.write("<br>");
+      }
+      ///////////
+      // ()
+      for (let row = 1; row <= n; row++) {
+        let totalCol_In_row = 2 * row - 1;
+        let noOfSpaces = n - row - 1;
+        for (let s = 1; s < noOfSpaces; s++) {
+          document.write("_");
+        }
+        for (let col = 1; col <= totalCol_In_row; col++) {
+          document.write("*");
+        }
+        document.write("<br>");
+      }
+      ////////////
+
+      for (let row = 1; row < n; row++) {
+        let totalCol_In_row = 2 * row - 1;
+        let noOfSpaces = n - row - 1;
+        for (let s = 1; s <= noOfSpaces; s++) {
+          document.write("__");
+        }
+        for (let col = 1; col <= totalCol_In_row; col++) {
+          document.write(` ${col} `);
+        }
+        document.write("<br>");
+      }
+      ///////////
+
+      for (let row = 1; row < n; row++) {
+        let totalCol_In_row = 2 * row - 1;
+        for (let space = 1; space < n - row; space++) {
+          document.write("_");
+        }
+        for (let col = row; col >= 1; col--) {
+          document.write(col);
+        }
+        for (let col = 2; col <= row; col++) {
+          document.write(col);
+        }
+        document.write("<br>");
+      }
+      /////////////////
+
+      for (let row = 1; row < 2 * n; row++) {
+        let totalCol_In_row = row > n ? 2 * n - row : row;
+        for (let space = 1; space <= n - totalCol_In_row; space++) {
+          document.write("_");
+        }
+        for (let col = totalCol_In_row; col >= 1; col--) {
+          document.write(col);
+        }
+        for (let col = 2; col <= totalCol_In_row; col++) {
+          document.write(col);
+        }
+
+        document.write("<br>");
+      }
+
+      // practice of above example ///////////////////////////////////////////
+      for (let row = 1; row <= 2 * n; row++) {
+        let c = row > n ? 2 * n - row : row;
+        for (let space = 1; space <= n - c; space++) {
+          document.write("_");
+        }
+        for (let col = c; col >= 1; col--) {
+          document.write(col);
+        }
+        for (let col = 2; col <= c; col++) {
+          document.write(col);
+        }
+        document.write("<br>");
+      }
+
+      // let n3 = 4;
+      // for (let row = 1; row <= n3; row++) {
+      //   totalCol_In_row = 2 * n3 - 1;
+      //   for (let col = 1; col <= 2 * n3 - 1; col++) {
+      //     document.write(n3);
+      //   }
+      //   for (let col = 2; col < row; col++) {
+      //     document.write(n3 - 1);
+      //   }
+      //   document.write("<br>");
+      // }
+
+      let n4 = 4;
+      let originalN = 4;
+      for (let row = 0; row <= n4 * 2; row++) {
+        for (let col = 0; col <= n; col++) {
+          let atEveryIndex =
+            originalN -
+            Math.min(Math.min(row, col), Math.min(n - row, n - col));
+          document.write(atEveryIndex);
+        }
+        document.write("<br>");
+      }
+
+      ////////////////////////////////////////////===PRACTICE===///////////////////////////////////////////////
+      for (let row = 1; row <= 4; row++) {
+        for (let col = 1; col <= row; col++) {
+          document.write("*");
+        }
+        document.write("<br>");
+      }
+
+      for (let row = 1; row <= 4; row++) {
+        for (let col = 1; col <= 4 + 1 - row; col++) {
+          document.write("*");
+        }
+        document.write("<br>");
+      }
+
+      let n5 = 4;
+      for (let row = 1; row <= n5 * 2; row++) {
+        let totalCol_In_row = row > n5 ? 2 * n5 - row : row;
+        for (let col = 1; col <= totalCol_In_row; col++) {
+          document.write("*");
+        }
+        document.write("<br>");
+      }
+
+      for (let row = 1; row <= n5 * 2; row++) {
+        let totalCol_In_row = row > n5 ? 2 * n5 - row : row;
+        let space = n5 - totalCol_In_row;
+        for (let s = 0; s <= space; s++) {
+          document.write("_");
+        }
+        for (let col = 1; col <= totalCol_In_row; col++) {
+          document.write("*");
+        }
+        document.write("<br>");
+      }
+
+      for (let row = 1; row <= n5; row++) {
+        let totalCol_In_row = 2 * row - 1;
+        let space = n5 - row - 1;
+        for (let s = 0; s <= space; s++) {
+          document.write("_");
+        }
+        for (let col = 1; col <= totalCol_In_row; col++) {
+          document.write("*");
+        }
+        document.write("<br>");
+      }
+    </script>
+  </body>
+</html>
